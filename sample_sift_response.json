@@ -1,0 +1,58 @@
+{
+  "status": 0,
+  "error_message": "OK",
+  "user_id": "billy_jones_301",
+  "scores": {
+    "payment_abuse": {
+      "status": 0,
+      "error_message": "OK",
+      "score": 0.898391231245,
+      "time": 84710383103092309,
+      "percentiles": {
+        "last_1_day": 0.98456721,
+        "last_5_days": 0.97544325,
+        "last_7_days": 0.97515456,
+        "last_10_days":0.96773876
+      },
+      "reasons": [
+        {
+          "name": "UsersPerDevice",
+          "value": 4,
+          "details": {
+            "users": "a, b, c, d"
+          }
+        }
+      ]
+    },
+    "promotion_abuse": {
+      "status": 0,
+      "error_message": "OK",
+      "score": 0.472838192111,
+      "reasons": []
+    },
+    "account_takeover": {
+      "status": -1,
+      "error_message": "Unexpected server-side error"
+    }
+  },
+  "latest_decisions": {
+    "payment_abuse": {
+      "id": "user_looks_bad_payment_abuse",
+      "type": "block",
+      "source": "AUTOMATED_RULE",
+      "time": 1352201880,
+      "description": "Bad Fraudster"
+    }
+  },
+  "latest_labels": {
+    "payment_abuse": {
+      "is_fraud": true,
+      "time": 1352201880,
+      "description": "received a chargeback"
+    },
+    "promotion_abuse": {
+      "is_fraud": false,
+      "time": 1362205000
+    }
+  }
+}
